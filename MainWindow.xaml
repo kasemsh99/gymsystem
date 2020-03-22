@@ -1,0 +1,67 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="500">
+    <Border Padding="10">
+        <StackPanel>
+            
+
+            <Grid Height="25">
+
+                <StackPanel HorizontalAlignment="Right" Margin="0 0">
+                    <ComboBox FontSize="10" Height="19" Width="50" Foreground="#FFA2A2A2" SelectedIndex="0" VerticalAlignment="Center">
+                        <ComboBoxItem Content="EN"/>
+                        <ComboBoxItem Content="AR"/>
+                    </ComboBox>
+
+                </StackPanel>
+
+            </Grid>
+
+            <Grid Height="150">
+                <Image x:Name="image" HorizontalAlignment="Left" Height="130" Margin="160,10,-114,0" VerticalAlignment="Center" Width="458" Source="/img/1.png"/>
+
+
+
+            </Grid>
+
+            <Grid Height="40">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Button Uid="0" Width="100" Content="HOME" Background="{x:Null}" BorderBrush="{x:Null}" Margin="5 5 15 0"  Foreground="#FF2196F3" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" Click="Button_Click"/>
+                    <Button Uid="1" Width="100" Content="Add player" Background="{x:Null}" BorderBrush="{x:Null}" Margin="5 5 15 0" Foreground="#FF2196F2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" Click="Button_Click1"/>
+                    <Button Uid="2" Width="100" Content="Form" Background="{x:Null}" BorderBrush="{x:Null}" Margin="5 5 15 0" Foreground="#FF2196F1" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" Click="Button_Click2"/>
+                    <Button Uid="2" Width="100" Content="FAQ" Background="{x:Null}" BorderBrush="{x:Null}" Margin="5 5 15 0" Foreground="#FF2196F1" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" Click="Button_Click2"/>
+
+                </StackPanel>
+
+
+                <Grid  x:Name="GridCursor"  Width="90" Height="5" Background="#FF2196F3" HorizontalAlignment="Left" Margin="10,22,0,0"/>
+
+
+            </Grid>
+
+
+
+          
+
+            <Grid  Height="400" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image x:Name="image1" HorizontalAlignment="Center" Height="300" Margin="0,0,0,0" VerticalAlignment="Center" Width="600" Source="/img/1.png" Opacity="0.2"/>
+                <TextBlock Text="by kasem shaker" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+                <TextBlock Text="GYM System mangement" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Height="24" Margin="0,0,0,60"/>
+
+                <Frame x:Name="PAGE1"/>
+                <Frame x:Name="PAGE2"/>
+
+            </Grid>
+
+
+
+
+
+        </StackPanel>
+    </Border>
+</Window>
