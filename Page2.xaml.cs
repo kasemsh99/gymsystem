@@ -14,19 +14,27 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.ComponentModel;
 
 namespace WpfApp1
 {
     /// <summary>
     /// Interaction logic for Page2.xaml
     /// </summary>
-    public partial class Page2 : Page
+    public partial class Page2 : Page 
     {
+      
+
+      
         public Page2()
         {
             InitializeComponent();
             load();
         }
+
+
+        
+
 
         private void resrt_click(object sender, RoutedEventArgs e)
         {
@@ -73,6 +81,12 @@ namespace WpfApp1
 
             File.Delete(path);
 
+        }
+
+        private void test_click(object sender, RoutedEventArgs e)
+        {
+            Uri uri = new Uri("PAGE3.xaml", UriKind.Relative);
+            this.NavigationService.Navigate(uri);
         }
     }
 }

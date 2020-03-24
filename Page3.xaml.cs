@@ -24,5 +24,14 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void PBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            int bmr;
+            bmr = 66 + (13 * 60)/100 + (5 * 106)/100 - (6 * 20)/ 100;
+            PBar.Value = bmr;
+
+
+        }
     }
 }

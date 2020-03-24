@@ -5,10 +5,18 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp1"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="Page3">
+       d:DesignHeight="440" d:DesignWidth="500"
+      Title="Page3" Background="White">
+    <StackPanel VerticalAlignment="Center" >
 
-    <Grid>
+        <Grid Height="60">
+            <TextBlock Foreground="#FF2196F3" Text="Results Quiz" FontSize="30" HorizontalAlignment="Center"/>
+        </Grid>
+
+
+        <Grid >
+            <ProgressBar Value="50"  Width="400" Height="30" Minimum="0"  Maximum="100" Name="PBar" ValueChanged="PBar_ValueChanged"/>
+        </Grid>
         
-    </Grid>
+    </StackPanel>
 </Page>

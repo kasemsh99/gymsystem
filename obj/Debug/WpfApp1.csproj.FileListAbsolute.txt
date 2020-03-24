@@ -15,3 +15,5 @@ C:\Users\kaseoom king\source\repos\WpfApp1\WpfApp1\obj\Debug\Page1.g.cs
 C:\Users\kaseoom king\source\repos\WpfApp1\WpfApp1\obj\Debug\Page1.baml
 C:\Users\kaseoom king\source\repos\WpfApp1\WpfApp1\obj\Debug\Page2.g.cs
 C:\Users\kaseoom king\source\repos\WpfApp1\WpfApp1\obj\Debug\Page2.baml
+C:\Users\kaseoom king\source\repos\WpfApp1\WpfApp1\obj\Debug\Page3.g.cs
+C:\Users\kaseoom king\source\repos\WpfApp1\WpfApp1\obj\Debug\Page3.baml

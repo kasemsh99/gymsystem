@@ -91,7 +91,7 @@
         </Grid>
      
         <Grid Height="30">
-            <Button Height="20" Content="Test results" Margin="20 0 9 0"/>
+            <Button Height="20" Content="Test results" Margin="20 0 9 0" Click="test_click"/>
 
         </Grid>
 
