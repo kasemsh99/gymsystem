@@ -5,11 +5,56 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp1"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="440" d:DesignWidth="500"
       Title="Page1" Background="White">
 
-    <Grid >
-        <Image x:Name="image1" HorizontalAlignment="Center" Height="300" Margin="0,0,0,0" VerticalAlignment="Center" Width="600" Source="/img/1.png" Opacity="0.2"/>
-       
-    </Grid>
+    <StackPanel>
+        <Grid Height="70" >
+            <TextBlock Text="Add Player" VerticalAlignment="Center" FontSize="50" Margin="10 0 0 0" Foreground="#FF2196F3" HorizontalAlignment="Center" />
+        </Grid>
+
+        <Grid Height="30" Margin="20.8,50.107,20.8,80.107">
+            <TextBlock Text="Name Player : " FontSize="15" Margin="10 0 0 0" Foreground="#FF2196F3"/>
+            <TextBox Margin="107,0,0.4,7" x:Name="name"/>
+        </Grid>
+        <Grid Height="30" Margin="20,-300,20,-200">
+            <TextBlock Text="Family Player :" FontSize="15" Margin="10 0 0 0" Foreground="#FF2196F3"/>
+            <TextBox Margin="107,0,0,7" x:Name="family"/>
+        </Grid>
+        <Grid Height="30" Margin="20,-200,20,-200">
+            <TextBlock Text="Day" FontSize="15" Margin="13,0,315,0" Foreground="#FF2196F3"/>
+            <TextBox Margin="55,0,330,7" x:Name="day"/>
+            <TextBlock Text="Month" FontSize="15" Margin="140,0,-168,0" Foreground="#FF2196F3"/>
+            <TextBox Margin="190,0,180,7" x:Name="month"/>
+            <TextBlock Text="Year" Margin="303,0,69,0" FontSize="15" Foreground="#FF2196F3"/>
+            <ComboBox FontSize="10" Height="19" Foreground="#FFA2A2A2" SelectedIndex="0" VerticalAlignment="Center" RenderTransformOrigin="0.46,0.053" Margin="341,2,0,9" x:Name="year">
+                <ComboBoxItem Content="2015"/>
+                <ComboBoxItem Content="2016"/>
+                <ComboBoxItem Content="2017"/>
+                <ComboBoxItem Content="2018"/>
+                <ComboBoxItem Content="2019"/>
+                <ComboBoxItem Content="2020"/>
+
+            </ComboBox>
+
+        </Grid>
+        <Grid Height="30" Margin="20,-100,20,-200">
+            <TextBlock Text="Country :" FontSize="15" Margin="10 0 0 0" Foreground="#FF2196F3"/>
+            <TextBox x:Name="country" Margin="80,0,0,7"/>
+        </Grid>
+
+        <Grid Height="30" Margin="10,70,20,0">
+            <Button Height="20" Margin="20,5,276,5" Grid.Column="0" Content="SAVE"  Click="savebtn_click" AutomationProperties.Name="save" />
+            <Button Height="20" Margin="261,5,0,5" Content="LOAD" Click="loadbtn_click"/>
+        </Grid>
+
+        <Grid Height="90" Margin="0,00,00,0">
+
+            <Button Height="20" Margin="0 0 10 0" Grid.Column="0" Content="GO TO QUIZ" Click="goto_Click" Uid="0"/>
+            <Button Height="20" Margin="0 60 10 0" Grid.Column="0" Content="EIXT" Click="CloseButton_Click"/>
+        </Grid>
+
+
+
+    </StackPanel>
 </Page>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -25,13 +26,15 @@ namespace WpfApp1
             InitializeComponent();
         }
 
+        public object NavigationService { get; private set; }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             int index = int.Parse(((Button)e.Source).Uid);
 
             GridCursor.Margin = new Thickness(10 + (125 * index), 22, 0, 0);
 
-            PAGE1.Content = new Page1();
+            
 
         }
 
@@ -41,7 +44,11 @@ namespace WpfApp1
 
             GridCursor.Margin = new Thickness(10 + (123 * index), 22, 0, 0);
 
-            PAGE2.Content = new Page2();
+            PAGE1.Content = new Page1();
+
+            
+
+
         }
 
         private void Button_Click2(object sender, RoutedEventArgs e)
@@ -49,8 +56,11 @@ namespace WpfApp1
             int index = int.Parse(((Button)e.Source).Uid);
 
             GridCursor.Margin = new Thickness(10 + (121 * index), 22, 0, 0);
+            PAGE2.Content = new Page2();
+          
 
         }
+       
     }
 
 
