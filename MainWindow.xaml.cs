@@ -30,33 +30,21 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int index = int.Parse(((Button)e.Source).Uid);
 
-            GridCursor.Margin = new Thickness(10 + (125 * index), 22, 0, 0);
-
-            
 
         }
 
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
-            int index = int.Parse(((Button)e.Source).Uid);
-
-            GridCursor.Margin = new Thickness(10 + (123 * index), 22, 0, 0);
 
             PAGE1.Content = new Page1();
-
-            
-
 
         }
 
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
-            int index = int.Parse(((Button)e.Source).Uid);
 
-            GridCursor.Margin = new Thickness(10 + (121 * index), 22, 0, 0);
-            PAGE2.Content = new Page2();
+           
           
 
         }

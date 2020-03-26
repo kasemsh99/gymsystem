@@ -15,8 +15,16 @@
 
 
         <Grid >
-            <ProgressBar Value="50"  Width="400" Height="30" Minimum="0"  Maximum="100" Name="PBar" ValueChanged="PBar_ValueChanged"/>
+            <ProgressBar Value="10"  Width="400" Height="30" Minimum="0"  Maximum="100" Name="PBar" />
         </Grid>
-        
+        <Grid Height="90" >
+            <TextBox IsReadOnly="True"  Margin="175,10,215,10" x:Name="test" FontSize="50" TextAlignment="Center" />
+            <TextBox IsReadOnly="True" Text="%" FontSize="50" Margin="264,10,156,10"/>
+        </Grid>
+
+        <Grid Height="80">
+            <TextBox FontSize="15" Height="40" x:Name="test1" TextAlignment="Center"/>
+        </Grid>
+
     </StackPanel>
 </Page>

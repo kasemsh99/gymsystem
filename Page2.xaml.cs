@@ -15,25 +15,23 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.ComponentModel;
+using System.Text.RegularExpressions;
 
 namespace WpfApp1
 {
     /// <summary>
     /// Interaction logic for Page2.xaml
     /// </summary>
-    public partial class Page2 : Page 
+    public partial class Page2 : Page
     {
-      
 
-      
+
         public Page2()
         {
             InitializeComponent();
             load();
         }
 
-
-        
 
 
         private void resrt_click(object sender, RoutedEventArgs e)
@@ -85,8 +83,56 @@ namespace WpfApp1
 
         private void test_click(object sender, RoutedEventArgs e)
         {
+            saveb();
             Uri uri = new Uri("PAGE3.xaml", UriKind.Relative);
             this.NavigationService.Navigate(uri);
+        }
+
+
+
+        private void add_click(object sender, RoutedEventArgs e)
+        {
+            Uri uri = new Uri("PAGE1.xaml", UriKind.Relative);
+            this.NavigationService.Navigate(uri);
+        }
+
+        private void saveb()
+        {
+            try
+            {
+                informatio1 info = new informatio1();
+                info.weight = weight.Text;
+                info.height = height.Text;
+                info.age = age.Text;
+                info.smoke = smoke.Text;
+
+
+
+                Database.savedata(info, "ab12.xml");
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+        }
+
+        private void weight_previewtestinput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+        }
+
+        private void height_previewtestinput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+        }
+
+        private void age_previewtestinput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
         }
     }
 }

@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Text.RegularExpressions;
 
 namespace WpfApp1
 {
@@ -140,9 +141,34 @@ namespace WpfApp1
 
             }
 
+
             
         }
 
+        private void day_previewtestinput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+        }
+
+        private void month_previewtestinput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+        }
+
+        private void name_previewtestinput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^a-z]+").IsMatch(e.Text);
+        }
+
+        private void family_previewtestinput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^a-z]+").IsMatch(e.Text);
+        }
+
+        private void country_previewtestinput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^a-z]+").IsMatch(e.Text);
+        }
     }
     }
 

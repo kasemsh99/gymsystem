@@ -17,3 +17,22 @@ C:\Users\kaseoom king\source\repos\WpfApp1\WpfApp1\obj\Debug\Page2.g.cs
 C:\Users\kaseoom king\source\repos\WpfApp1\WpfApp1\obj\Debug\Page2.baml
 C:\Users\kaseoom king\source\repos\WpfApp1\WpfApp1\obj\Debug\Page3.g.cs
 C:\Users\kaseoom king\source\repos\WpfApp1\WpfApp1\obj\Debug\Page3.baml
+F:\gymsystem-master\gymsystem-master\bin\Debug\WpfApp1.exe.config
+F:\gymsystem-master\gymsystem-master\bin\Debug\WpfApp1.exe
+F:\gymsystem-master\gymsystem-master\bin\Debug\WpfApp1.pdb
+F:\gymsystem-master\gymsystem-master\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+F:\gymsystem-master\gymsystem-master\obj\Debug\MainWindow.g.cs
+F:\gymsystem-master\gymsystem-master\obj\Debug\PAGE1.g.cs
+F:\gymsystem-master\gymsystem-master\obj\Debug\PAGE2.g.cs
+F:\gymsystem-master\gymsystem-master\obj\Debug\Page3.g.cs
+F:\gymsystem-master\gymsystem-master\obj\Debug\App.g.cs
+F:\gymsystem-master\gymsystem-master\obj\Debug\WpfApp1_MarkupCompile.cache
+F:\gymsystem-master\gymsystem-master\obj\Debug\WpfApp1_MarkupCompile.lref
+F:\gymsystem-master\gymsystem-master\obj\Debug\MainWindow.baml
+F:\gymsystem-master\gymsystem-master\obj\Debug\PAGE1.baml
+F:\gymsystem-master\gymsystem-master\obj\Debug\PAGE2.baml
+F:\gymsystem-master\gymsystem-master\obj\Debug\Page3.baml
+F:\gymsystem-master\gymsystem-master\obj\Debug\WpfApp1.g.resources
+F:\gymsystem-master\gymsystem-master\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+F:\gymsystem-master\gymsystem-master\obj\Debug\WpfApp1.exe
+F:\gymsystem-master\gymsystem-master\obj\Debug\WpfApp1.pdb

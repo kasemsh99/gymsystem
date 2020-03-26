@@ -16,19 +16,19 @@
 
         <Grid Margin="0,0,0,0" Height="49">
             <TextBlock Text="Name Player : " FontSize="15" Margin="95,10,-85,-10" />
-            <TextBox Margin="194,10,205,20" x:Name="name1"/>
-            <TextBox Margin="300,10,84,20" x:Name="name2"/>
+            <TextBox IsReadOnly="True" Margin="194,10,205,20" x:Name="name1"/>
+            <TextBox IsReadOnly="True" Margin="300,10,84,20" x:Name="name2"/>
 
 
         </Grid>
 
         <Grid Height="40">
             <TextBlock Text="Weight" FontSize="15" Margin="13,0,10,0" Foreground="#FF2196F3"/>
-            <TextBox x:Name="weight" Margin="66,0,344,19"/>
+            <TextBox x:Name="weight" Margin="66,0,344,19" PreviewTextInput="weight_previewtestinput"/>
             <TextBlock Text="Height" FontSize="15" Margin="170,0,10,0" Foreground="#FF2196F3"/>
-            <TextBox x:Name="height" Margin="220,0,180,19"/>
+            <TextBox x:Name="height" Margin="220,0,180,19" PreviewTextInput="height_previewtestinput"/>
             <TextBlock Text="Age" FontSize="15" Margin="350,0,10,0" Foreground="#FF2196F3"/>
-            <TextBox x:Name="age" Margin="380,0,30,19"/>
+            <TextBox x:Name="age" Margin="380,0,30,19" PreviewTextInput="age_previewtestinput"/>
         </Grid>
 
         <Grid Height="40">
@@ -86,7 +86,7 @@
                 <ColumnDefinition Width="80"/>
             </Grid.ColumnDefinitions>
 
-            <Button Height="20" Content="ADD" Margin="20 0 -150 0"/>
+            <Button Height="20" Content="ADD" Margin="20 0 -150 0" Click="add_click"/>
             <Button Height="20" Margin="114,5,-214,5" Grid.Column="2" Content="RESET" Click="resrt_click" />
         </Grid>
      

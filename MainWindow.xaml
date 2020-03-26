@@ -8,14 +8,14 @@
         Height="700" Width="500">
     <Border Padding="10">
         <StackPanel>
-            
+
 
             <Grid Height="25">
 
                 <StackPanel HorizontalAlignment="Right" Margin="0 0">
                     <ComboBox FontSize="10" Height="19" Width="50" Foreground="#FFA2A2A2" SelectedIndex="0" VerticalAlignment="Center">
                         <ComboBoxItem Content="EN"/>
-                        <ComboBoxItem Content="AR"/>
+                      
                     </ComboBox>
 
                 </StackPanel>
@@ -39,22 +39,27 @@
                 </StackPanel>
 
 
-                <Grid  x:Name="GridCursor"  Width="90" Height="5" Background="#FF2196F3" HorizontalAlignment="Left" Margin="10,22,0,0"/>
+                <Grid  x:Name="GridCursor"  Width="452" Height="5" Background="#FF2196F3" HorizontalAlignment="Left" Margin="10,31,0,4"/>
 
 
             </Grid>
 
 
 
-          
+
 
             <Grid  Height="440" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Image x:Name="image1" HorizontalAlignment="Center" Height="300" Margin="0,0,0,0" VerticalAlignment="Center" Width="600" Source="/img/1.png" Opacity="0.2"/>
-                <TextBlock Text="by kasem shaker" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
-                <TextBlock Text="GYM System mangement" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Height="24" Margin="0,0,0,60"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="47*"/>
+                </Grid.ColumnDefinitions>
+                <Image x:Name="image1" HorizontalAlignment="Center" Height="300" Margin="-64,70" VerticalAlignment="Center" Width="600" Source="/img/1.png" Opacity="0.2" Grid.ColumnSpan="2"/>
+                <TextBlock Text="by kasem shaker" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Grid.Column="1" Margin="68,207,152,195" Height="38"/>
+                <TextBlock Text="GYM System mangement" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Height="38" Margin="28,158,91,244" Grid.Column="1" Width="247"/>
+                <TextBlock Text="Click - add player - to start " Margin="10,0,196,390" Grid.ColumnSpan="2" />
 
-                <Frame x:Name="PAGE1"/>
-                <Frame x:Name="PAGE2"/>
+                <Frame x:Name="PAGE1" Grid.ColumnSpan="2"/>
+                <Frame x:Name="PAGE2" Grid.ColumnSpan="2"/>
 
             </Grid>
 
